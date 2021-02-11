@@ -1,0 +1,46 @@
+﻿
+
+body,html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+body {    
+    background-image: url("/Imagenes/17276-escolares.jpg");    
+    background-position: center center;    
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    background-size: cover;   
+    background-color: #464646;
+}
+
+
+#formLogin {
+    width: 50%;
+    margin: 100px auto;
+    border: 1px solid #449a89;
+    box-shadow: #000000 5px 5px 5px;
+    padding-bottom: 2%;
+}
+
+#imgLogin {
+    content: url("/Imagenes/kisspng-india-login-computer-icons-emoticon-medicine-user-login-icon-5ab05c8c27d4c1.4591099815215074681632.png");
+    width: 50%;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+#btnIngresar {
+    background-color: darkolivegreen;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+
+

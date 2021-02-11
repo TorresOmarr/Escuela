@@ -1,0 +1,33 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Escuela_DAL.Alumnos
+{
+    public class MateriaDAL
+    {
+        EscuelaEntities modelo;
+
+        public MateriaDAL()
+        {
+            modelo = new EscuelaEntities();
+        }
+
+        public List<Materia> cargarMaterias()
+        {
+
+            var materias = from mMaterias in modelo.Materia
+                           select mMaterias;
+
+            return materias.ToList();
+
+
+
+        }
+
+    }
+}
