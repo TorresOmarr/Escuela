@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alumnos\alumnos_JSON.aspx" />
     <Content Include="Alumnos\Alumno_i.aspx" />
     <Content Include="Alumnos\Alumno_s.aspx" />
     <Content Include="Alumnos\alumno_u.aspx" />
@@ -186,6 +187,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ServicioAlumno.asmx" />
     <Content Include="ServicioWCFAlumnos.svc" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -194,6 +196,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumnos\alumnos_JSON.aspx.cs">
+      <DependentUpon>alumnos_JSON.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alumnos\alumnos_JSON.aspx.designer.cs">
+      <DependentUpon>alumnos_JSON.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Alumnos\Alumno_i.aspx.cs">
       <DependentUpon>Alumno_i.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,6 +273,10 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioAlumno.asmx.cs">
+      <DependentUpon>ServicioAlumno.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ServicioWCFAlumnos.svc.cs">
       <DependentUpon>ServicioWCFAlumnos.svc</DependentUpon>
     </Compile>
@@ -314,6 +327,14 @@
     <ProjectReference Include="..\Escuela_DAL\Escuela_DAL.csproj">
       <Project>{a05f19f4-393d-4a1f-a5dd-e198accf88bd}</Project>
       <Name>Escuela_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiciosWeb.Datos\ServiciosWeb.Datos.csproj">
+      <Project>{46953ccd-1cf4-48a5-8746-ae5ba271a162}</Project>
+      <Name>ServiciosWeb.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiciosWeb.WebApi\ServiciosWeb.WebApi.csproj">
+      <Project>{85a8bb41-ab74-4bc6-bab6-86175e412149}</Project>
+      <Name>ServiciosWeb.WebApi</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

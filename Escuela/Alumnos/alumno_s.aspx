@@ -31,7 +31,7 @@
 
             $.ajax({
                 type: "GET",
-                url: '<%= ResolveUrl("~/ServicioWeb/Controllers/FacultadController.cs/consultaFacultad")%>',                
+                url: '<%= ResolveUrl("~/Escuela/ServicioAlumno/obtenerAlumnos") %>' ,                
                 success: function (data) {
                     console.log("¡Llamada de AJAX exitosa!");
                     console.log(data);

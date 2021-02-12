@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="EscuelaModel.MateriaFacultad" Width="1.5" PointX="12.75" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="EscuelaModel.Pais" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="EscuelaModel.Universidad" Width="1.5" PointX="7.25" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="EscuelaModel.Usuario" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EscuelaModel.Usuario" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="EscuelaModel.FK_Alumno_Ciudad" ManuallyRouted="false" />
         <AssociationConnector Association="EscuelaModel.FK_Alumno_Facultad" ManuallyRouted="false" />
         <AssociationConnector Association="EscuelaModel.FK_MateriaAlumno_Alumno" ManuallyRouted="false" />
